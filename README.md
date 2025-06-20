@@ -4,7 +4,7 @@ This project builds an RDF knowledge graph of 22 favorite English songs using se
 
 > **Course**: Semantic Web and Linked Data  
 > **Institution**: University of Zurich (Spring 2023)  
-> **Contributors**: Xiaojing Zhang and one teammate
+> **Contributors**: Xiaojing Zhang and Huan Liu
 
 ---
 
