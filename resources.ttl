@@ -1,0 +1,682 @@
+@prefix : <http://www.mysemantics.com/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix myOnto: <http://www.mysemantics.com/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://www.mysemantics.com/> .
+@base <http://www.mysemantics.com/> .
+
+
+#################################################################
+# SONG
+
+dbr:Best_Part_of_Me a myOnto:Song ;
+    myOnto:hasName "Best Part of Me"@en ;
+    dbo:artist dbr:Ed_Sheeran ;
+    dbo:writer dbr:Benny_Blanco,
+        dbr:Ed_Sheeran,
+        dbr:Yebba ;
+    dbo:genre dbr:Pop_music ;
+    dbo:producer dbr:Benny_Blanco ;
+    dbo:recordLabel dbr:Asylum_Records,
+        dbr:Atlantic_Records ;
+    dbo:releaseDate "2019-07-05"^^xsd:date ;
+    rdfs:label "Best Part of Me"@en ;
+    rdfs:comment "A song by English singer-songwriter Ed Sheeran."@en .
+
+dbr:Blank_Space a myOnto:Song ;
+    myOnto:hasName "Blank Space"@en ;
+    dbo:artist dbr:Taylor_Swift ;
+    dbo:writer dbr:Max_Martin ;
+    dbo:genre dbr:Electropop ;
+    dbo:producer dbr:Max_Martin ;
+    dbo:recordLabel dbr:Big_Machine_Records ;
+    dbo:releaseDate "2014-11-10"^^xsd:date ;
+    rdfs:label "Blank Space"@en ;
+    rdfs:comment "A song by American singer-songwriter Taylor Swift."@en .
+
+dbr:De_Una_Vez a myOnto:Song ;
+    myOnto:hasName "De Una Vez"@en ;
+    dbo:artist dbr:Selena_Gomez ;
+    dbo:writer dbr:Elena_Rose,
+        dbr:Tainy ;
+    dbo:genre dbr:Pop_music ;
+    dbo:producer dbr:Tainy ;
+    dbo:recordLabel dbr:Interscope_Records ;
+    dbo:releaseDate "2021-01-14"^^xsd:date ;
+    rdfs:label "De Una Vez"@en ;
+    rdfs:comment "A song recorded by American singer Selena Gomez."@en .
+
+dbr:Easy_on_Me a myOnto:Song ;
+    myOnto:hasName "Easy on Me"@en ;
+    dbo:artist dbr:Adele ;
+    dbo:writer dbr:Adele,
+        dbr:Greg_Kurstin ;
+    dbo:genre dbr:Pop_music ;
+    dbo:producer dbr:Greg_Kurstin ;
+    dbo:recordLabel dbr:Columbia_Records ;
+    dbo:releaseDate "2021-10-15"^^xsd:date ;
+    rdfs:label "Easy on Me"@en ;
+    rdfs:comment "A song by English singer Adele from her fourth studio album."@en .
+
+dbr:Freestyle_4 a myOnto:Song ;
+    myOnto:hasName "Freestyle 4"@en ;
+    dbo:artist dbr:Kanye_West ;
+    dbo:writer dbr:Alison_Goldfrapp,
+        dbr:Caroline_Shaw,
+        dbr:Desiigner,
+        dbr:Hudson_Mohawke,
+        dbr:Kanye_West,
+        dbr:Will_Gregory ;
+    dbo:genre dbr:Progressive_hop ;
+    dbo:producer dbr:Hudson_Mohawke ;
+    dbo:recordLabel dbr:Def_Jam_Recordings,
+        dbr:GOOD_Music ;
+    dbo:releaseDate "2016-02-14"^^xsd:date ;
+    rdfs:label "Freestyle 4"@en ;
+    rdfs:comment "A song by American hip-hop artist Kanye West that features vocals from rapper Desiigner."@en .
+
+dbr:Hometown_Glory a myOnto:Song ;
+    myOnto:hasName "Hometown Glory"@en ;
+    dbo:artist dbr:Adele ;
+    dbo:writer dbr:Adele ;
+    dbo:genre dbr:Soul_music ;
+    dbo:producer dbr:Jim_Abbiss ;
+    dbo:recordLabel dbr:Columbia_Records,
+        dbr:XL_Recordings ;
+    dbo:releaseDate "2007-10-22"^^xsd:date ;
+    rdfs:label "Hometown Glory"@en ;
+    rdfs:comment "The debut single by English singer-songwriter Adele."@en .
+
+dbr:Lego_House a myOnto:Song ;
+    myOnto:hasName "Lego House"@en ;
+    dbo:artist dbr:Ed_Sheeran ;
+    dbo:writer dbr:Ed_Sheeran,
+        dbr:Jake_Gosling ;
+    dbo:genre dbr:Pop_music ;
+    dbo:producer dbr:Jake_Gosling ;
+    dbo:recordLabel dbr:Warner_Music_Group ;
+    dbo:releaseDate "2011-11-11"^^xsd:date ;
+    rdfs:label "Lego House"@en ;
+    rdfs:comment "A song by English singer-songwriter Ed Sheeran."@en .
+
+dbr:Look_What_You_Made_Me_Do a myOnto:Song ;
+    myOnto:hasName "Look What You Made Me Do"@en ;
+    dbo:artist dbr:Taylor_Swift ;
+    dbo:writer dbr:Jack_Antonoff,
+        dbr:Richard_Fairbrass ;
+    dbo:genre dbr:Electropop ;
+    dbo:producer dbr:Jack_Antonoff,
+        dbr:Taylor_Swift ;
+    dbo:recordLabel dbr:Big_Machine_Records ;
+    dbo:releaseDate "2017-08-24"^^xsd:date ;
+    rdfs:label "Look What You Made Me Do"@en ;
+    rdfs:comment "A song recorded by American singer-songwriter Taylor Swift."@en .
+
+dbr:Nothing_Is_Promised a myOnto:Song ;
+    myOnto:hasName "Nothing Is Promised"@en ;
+    dbo:artist dbr:Rihanna ;
+    dbo:writer dbr:Greg_Kurstin,
+        dbr:Mike_Will_Made_It ;
+    dbo:genre dbr:Hip_hop_music ;
+    dbo:producer dbr:Mike_Will_Made_It ;
+    dbo:recordLabel dbr:Interscope_Records,
+        dbr:Rihanna ;
+    dbo:releaseDate "2016-06-03"^^xsd:date ;
+    rdfs:label "Nothing Is Promised"@en ;
+    rdfs:comment "A song recorded by American producer Mike Will Made It and Barbadian recording artist Rihanna."@en .
+
+dbr:Rolling_in_the_Deep a myOnto:Song ;
+    myOnto:hasName "Rolling in the Deep"@en ;
+    dbo:artist dbr:Adele ;
+    dbo:writer dbr:Adele,
+        dbr:Paul_Epworth ;
+    dbo:genre dbr:Soul_music ;
+    dbo:producer dbr:Paul_Epworth ;
+    dbo:recordLabel dbr:Columbia_Records,
+        dbr:XL_Recordings ;
+    dbo:releaseDate "2010-11-29"^^xsd:date ;
+    rdfs:label "Rolling in the Deep"@en ;
+    rdfs:comment "A song recorded by English singer-songwriter Adele for her second studio album."@en .
+
+dbr:Same_Old_Love a myOnto:Song ;
+    myOnto:hasName "Same Old Love"@en ;
+    dbo:artist dbr:Selena_Gomez ;
+    dbo:writer dbr:Benny_Blanco,
+        dbr:Charli_XCX,
+        dbr:Ross_Golan ;
+    dbo:genre dbr:Electropop ;
+    dbo:producer dbr:Benny_Blanco ;
+    dbo:recordLabel dbr:Universal_Music_Group ;
+    dbo:releaseDate "2015-09-10"^^xsd:date ;
+    rdfs:label "Same Old Love"@en ;
+    rdfs:comment "A song recorded by American singer Selena Gomez."@en .
+
+dbr:Santa_Tell_Me a myOnto:Song ;
+    myOnto:hasName "Santa Tell Me"@en ;
+    dbo:artist dbr:Ariana_Grande ;
+    dbo:writer dbr:Ilya_Salmanzadeh,
+        dbr:Savan_Kotecha ;
+    dbo:genre dbr:Pop_music ;
+    dbo:producer dbr:Ilya_Salmanzadeh ;
+    dbo:recordLabel dbr:Republic_Records ;
+    dbo:releaseDate "2014-11-24"^^xsd:date ;
+    rdfs:label "Santa Tell Me"@en ;
+    rdfs:comment "A Christmas song recorded by American singer Ariana Grande."@en .
+
+dbr:Summertime_Sadness a myOnto:Song ;
+    myOnto:hasName "Summertime Sadness"@en ;
+    dbo:artist dbr:Lana_Del_Rey ;
+    dbo:writer dbr:Rick_Nowels ;
+    dbo:genre dbr:Pop_music ;
+    dbo:producer dbr:Emile_Haynie ;
+    dbo:recordLabel dbr:Interscope_Records ;
+    dbo:releaseDate "2012-06-22"^^xsd:date ;
+    rdfs:label "Summertime Sadness"@en ;
+    rdfs:comment "A song by Lana Del Rey from her second major-label studio album."@en .
+
+dbr:Shades_of_Cool a myOnto:Song ;
+    myOnto:hasName "Shades of Cool"@en ;
+    dbo:artist dbr:Lana_Del_Rey ;
+    dbo:writer dbr:Rick_Nowels ;
+    dbo:genre dbr:Pop_music ;
+    dbo:producer dbr:Dan_Auerbach ;
+    dbo:recordLabel dbr:Interscope_Records ;
+    dbo:releaseDate "2014-05-26"^^xsd:date ;
+    rdfs:label "Shades of Cool"@en ;
+    rdfs:comment "A song by American singer-songwriter Lana Del Rey."@en .
+
+dbr:The_Light_Is_Coming a myOnto:Song ;
+    myOnto:hasName "The Light Is Coming"@en ;
+    dbo:artist dbr:Ariana_Grande ;
+    dbo:writer dbr:Nicki_Minaj,
+        dbr:Pharrell_Williams ;
+    dbo:genre dbr:Dance_music ;
+    dbo:producer dbr:Pharrell_Williams ;
+    dbo:recordLabel dbr:Republic_Records ;
+    dbo:releaseDate "2018-06-20"^^xsd:date ;
+    rdfs:label "The Light Is Coming"@en ;
+    rdfs:comment "A song by American singer Ariana Grande, featuring American rapper Nicki Minaj."@en .
+
+dbr:Thinking_Out_Loud a myOnto:Song ;
+    myOnto:hasName "Thinking Out Loud"@en ;
+    dbo:artist dbr:Ed_Sheeran ;
+    dbo:writer dbr:Amy_Wadge,
+        dbr:Ed_Sheeran ;
+    dbo:genre dbr:Soft_rock ;
+    dbo:producer dbr:Jake_Gosling ;
+    dbo:recordLabel dbr:Asylum_Records,
+        dbr:Atlantic_Records ;
+    dbo:releaseDate "2014-09-24"^^xsd:date ;
+    rdfs:label "Thinking Out Loud"@en ;
+    rdfs:comment "A song by English singer-songwriter Ed Sheeran."@en .
+
+dbr:We_Found_Love a myOnto:Song ;
+    myOnto:hasName "We Found Love"@en ;
+    dbo:artist dbr:Rihanna ;
+    dbo:writer dbr:Calvin_Harris ;
+    dbo:genre dbr:Electro_house ;
+    dbo:producer dbr:Calvin_Harris ;
+    dbo:recordLabel dbr:Def_Jam_Recordings ;
+    dbo:releaseDate "2011-09-22"^^xsd:date ;
+    rdfs:label "We Found Love"@en ;
+    rdfs:comment "A song by Barbadian singer Rihanna from her sixth studio album."@en .
+
+:BlackBeauty a myOnto:Song ;
+    myOnto:hasName "Black Beauty"@en ;
+    dbo:artist dbr:Lana_Del_Rey ;
+    dbo:writer dbr:Lana_Del_Rey,
+        dbr:Rick_Nowels ;
+    dbo:genre dbr:Electronic_music ;
+    dbo:producer dbr:Paul_Epworth ;
+    dbo:recordLabel dbr:Universal_Music_Group ;
+    dbo:releaseDate "2014-11-21"^^xsd:date ;
+    rdfs:label "Black Beauty"@en ;
+    rdfs:comment "A song by Lana Del Rey from her second major-label studio album."@en .
+
+:DancetheNight a myOnto:Song ;
+    myOnto:hasName "Dance the Night"@en ;
+    dbo:artist dbr:Dua_Lipa ;
+    dbo:writer dbr:Andrew_Wyatt,
+        dbr:Caroline_Ailin,
+        dbr:Dua_Lipa,
+        dbr:Mark_Ronson ;
+    dbo:genre dbr:Disco ;
+    dbo:producer dbr:Andrew_Wyatt,
+        dbr:Mark_Ronson ;
+    dbo:recordLabel dbr:Atlantic_Records ;
+    dbo:releaseDate "2023-05-25"^^xsd:date ;
+    rdfs:label "Dance the Night"@en ;
+    rdfs:comment "A song by English and Albanian singer Dua Lipa."@en .
+
+:Fire a myOnto:Song ;
+    myOnto:hasName "Fire"@en ;
+    dbo:artist dbr:Gavin_DeGraw ;
+    dbo:writer dbr:Gavin_DeGraw ;
+    dbo:genre dbr:Pop_music ;
+    dbo:producer dbr:Max_Martin ;
+    dbo:recordLabel dbr:RCA_Records ;
+    dbo:releaseDate "2014-08-12"^^xsd:date ;
+    rdfs:label "Fire"@en ;
+    rdfs:comment "A song by an American singer-songwriter Gavin DeGraw."@en .
+
+:Flowers a myOnto:Song ;
+    myOnto:hasName "Flowers"@en ;
+    dbo:artist dbr:Miley_Cyrus ;
+    dbo:writer dbr:Michael_Pollack,
+        dbr:Miley_Cyrus ;
+    dbo:genre dbr:Funk ;
+    dbo:producer dbr:Kid_Harpoon ;
+    dbo:recordLabel dbr:Columbia_Records ;
+    dbo:releaseDate "2023-01-12"^^xsd:date ;
+    rdfs:label "Flowers"@en ;
+    rdfs:comment "A song by American singer Miley Cyrus."@en .
+
+:SayYesToHeaven a myOnto:Song ;
+    myOnto:hasName "Say Yes to Heaven"@en ;
+    dbo:artist dbr:Lana_Del_Rey ;
+    dbo:writer dbr:Lana_Del_Rey,
+        dbr:Rick_Nowels ;
+    dbo:genre dbr:Soft_rock ;
+    dbo:producer dbr:Rick_Nowels ;
+    dbo:recordLabel dbr:Interscope_Records ;
+    dbo:releaseDate "2023-05-19"^^xsd:date ;
+    rdfs:label "Say Yes to Heaven"@en ;
+    rdfs:comment "A song by American singer-songwriter Lana Del Rey."@en .
+
+
+#################################################################
+# PERSON
+
+
+
+dbr:Alison_Goldfrapp a myOnto:Person ;
+    dbo:birthName "Alison Elizabeth Margaret Goldfrapp"@en ;
+    myOnto:hasWikipageID 2134961 ;
+    rdfs:label "Alison Goldfrapp"@en ;
+    rdfs:comment "An English musician and record producer."@en .
+
+dbr:Amy_Wadge a myOnto:Person ;
+    dbo:birthName "Amy Victoria Wadge"@en ;
+    myOnto:hasWikipageID 3159640 ;
+    rdfs:label "Amy Wadge"@en ;
+    rdfs:comment "An English singer and songwriter."@en .
+
+dbr:Caroline_Ailin a myOnto:Person ;
+    dbo:birthName "Caroline Ailin Buvik Furøyen"@en ;
+    myOnto:hasWikipageID 60075331 ;
+    rdfs:label "Caroline Ailin"@en ;
+    rdfs:comment "A Norwegian singer and songwriter based in London."@en .
+
+dbr:Caroline_Shaw a myOnto:Person ;
+    dbo:birthName "Caroline Adelaide Shaw"@en ;
+    myOnto:hasWikipageID 39254203 ;
+    rdfs:label "Caroline Shaw"@en ;
+    rdfs:comment "An American composer, violinist, and singer."@en .
+
+dbr:Charli_XCX a myOnto:Person ;
+    dbo:birthName "Charlotte Emma Aitchison"@en ;
+    myOnto:hasWikipageID 34953684 ;
+    rdfs:label "Charli XCX"@en ;
+    rdfs:comment "An English singer and songwriter."@en .
+
+dbr:Dan_Auerbach a myOnto:Person ;
+    dbo:birthName "Daniel Quine Auerbach"@en ;
+    myOnto:hasWikipageID 1342322 ;
+    rdfs:label "Dan Auerbach"@en ;
+    rdfs:comment "An American musician, singer-songwriter, and record producer."@en .
+
+dbr:Desiigner a myOnto:Person ;
+    dbo:birthName "Sidney Royel Selby III"@en ;
+    myOnto:hasWikipageID 49400746 ;
+    rdfs:label "Desiigner"@en ;
+    rdfs:comment "An American rapper and singer."@en .
+
+dbr:Elena_Rose a myOnto:Person ;
+    dbo:birthName "Andrea Elena Mangiamarchi"@en ;
+    myOnto:hasWikipageID 64498981 ;
+    rdfs:label "Elena Rose"@en ;
+    rdfs:comment "A Venezuelan American singer and songwriter from Miami."@en .
+
+dbr:Emile_Haynie a myOnto:Person ;
+    dbo:birthName "Emile Haynie"@en ;
+    myOnto:hasWikipageID 34605063 ;
+    rdfs:label "Emile Haynie"@en ;
+    rdfs:comment "An American music producer from Buffalo, New York."@en .
+
+dbr:Jim_Abbiss a myOnto:Person ;
+    dbo:birthName "Jim Abbiss"@en ;
+    myOnto:hasWikipageID 13619094 ;
+    rdfs:label "Jim Abbiss"@en ;
+    rdfs:comment "A British music producer."@en .
+
+dbr:Kid_Harpoon a myOnto:Person ;
+    dbo:birthName "Thomas Edward Percy Hull"@en ;
+    myOnto:hasWikipageID 11485463 ;
+    rdfs:label "Kid Harpoon"@en ;
+    rdfs:comment "An English singer, songwriter, musician and record producer."@en .
+
+dbr:Michael_Pollack a myOnto:Person ;
+    dbo:birthName "Michael Ross Pollack"@en ;
+    myOnto:hasWikipageID 63056561 ;
+    rdfs:label "Michael Pollack"@en ;
+    rdfs:comment "An American songwriter and record producer."@en .
+
+dbr:Nicki_Minaj a myOnto:Person ;
+    dbo:birthName "Onika Tanya Maraj"@en ;
+    myOnto:hasWikipageID 22570683 ;
+    rdfs:label "Nicki Minaj"@en ;
+    rdfs:comment "A Trinidadian-born rapper based in the United States."@en .
+
+dbr:Richard_Fairbrass a myOnto:Person ;
+    dbo:birthName "Richard Peter John Fairbrass"@en ;
+    myOnto:hasWikipageID 4314218 ;
+    rdfs:label "Richard Fairbrass"@en ;
+    rdfs:comment "An English singer, bassist and television presenter."@en .
+
+dbr:Ross_Golan a myOnto:Person ;
+    dbo:birthName "Ross Golan"@en ;
+    myOnto:hasWikipageID 37155421 ;
+    rdfs:label "Ross Golan"@en ;
+    rdfs:comment "A multi-award-winning American songwriter, record producer and playwright."@en .
+
+dbr:Savan_Kotecha a myOnto:Person ;
+    dbo:birthName "Savan Harish Kotecha"@en ;
+    myOnto:hasWikipageID 14091317 ;
+    rdfs:label "Savan Kotecha"@en ;
+    rdfs:comment "An American songwriter and record producer from Austin, Texas."@en .
+    
+dbr:Will_Gregory a myOnto:Person ;
+    dbo:birthName "William Owen Gregory"@en ;
+    myOnto:hasWikipageID 4187747 ;
+    rdfs:label "William Gregory"@en ;
+    rdfs:comment "An English musician and record producer."@en .
+
+dbr:Yebba a myOnto:Person ;
+    dbo:birthName "Abigail Elizabeth Smith"@en ;
+    myOnto:hasWikipageID 60645033 ;
+    rdfs:label "Yebba"@en ;
+    rdfs:comment "An American singer and songwriter from West Memphis, Arkansas."@en .
+
+dbr:Andrew_Wyatt a myOnto:Person ;
+    dbo:birthName "Andrew Wyatt Blakemore"@en ;
+    myOnto:hasWikipageID 13118249 ;
+    rdfs:label "Andrew Wyatt"@en ;
+    rdfs:comment "An American musician, songwriter and record producer."@en .
+
+dbr:Ariana_Grande a myOnto:Person ;
+    dbo:birthName "Ariana Grande-Butera"@en ;
+    myOnto:hasWikipageID 25276055 ;
+    rdfs:label "Ariana Grande"@en ;
+    rdfs:comment "An American singer, songwriter, and actress."@en .
+    
+dbr:Calvin_Harris a myOnto:Person ;
+    dbo:birthName "Adam Richard Wiles"@en ;
+    myOnto:hasWikipageID 9424472 ;
+    rdfs:label "Calvin Harris"@en ;
+    rdfs:comment "A Scottish DJ, record producer, singer, and songwriter."@en .
+
+dbr:Dua_Lipa a myOnto:Person ;
+    dbo:birthName "Dua Lipa"@en ;
+    myOnto:hasWikipageID 49002318 ;
+    rdfs:label "Dua Lipa"@en ;
+    rdfs:comment "An English and Albanian singer and songwriter."@en .
+
+dbr:Gavin_DeGraw a myOnto:Person ;
+    dbo:birthName "Gavin Shane DeGraw"@en ;
+    myOnto:hasWikipageID 7955359 ;
+    rdfs:label "Gavin DeGraw"@en ;
+    rdfs:comment "An American singer-songwriter."@en .
+
+dbr:Hudson_Mohawke a myOnto:Person ;
+    dbo:birthName "Hudson Mohawke"@en ;
+    myOnto:hasWikipageID 21431138 ;
+    rdfs:label "Ross Matthew Birchard"@en ;
+    rdfs:comment "A Scottish-American producer, composer, and DJ from Glasgow."@en .
+
+dbr:Ilya_Salmanzadeh a myOnto:Person ;
+    dbo:birthName "Ilya Salmanzadeh"@en ;
+    myOnto:hasWikipageID 42686955 ;
+    rdfs:label "Ilya Salmanzadeh"@en ;
+    rdfs:comment "A Swedish-Persian songwriter, producer and singer."@en .
+    
+dbr:Jack_Antonoff a myOnto:Person ;
+    dbo:birthName "Jack Michael Antonoff"@en ;
+    myOnto:hasWikipageID 37591914 ;
+    rdfs:label "Jack Antonoff"@en ;
+    rdfs:comment "An American singer, multi-instrumentalist, songwriter, and record producer."@en .
+
+dbr:Kanye_West a myOnto:Person ;
+    dbo:birthName "Kanye West"@en ;
+    myOnto:hasWikipageID 523032 ;
+    rdfs:label "Kanye West"@en ;
+    rdfs:comment "An American rapper, songwriter, record producer and fashion designer."@en .
+
+dbr:Mark_Ronson a myOnto:Person ;
+    dbo:birthName "Mark Daniel Ronson"@en ;
+    myOnto:hasWikipageID 2885151 ;
+    rdfs:label "Mark Ronson"@en ;
+    rdfs:comment "A British-American DJ, songwriter, record producer, and record executive."@en .
+
+dbr:Mike_Will_Made_It a myOnto:Person ;
+    dbo:birthName "Michael Len Williams II"@en ;
+    myOnto:hasWikipageID 37114091 ;
+    rdfs:label "Mike Will Made It"@en ;
+    rdfs:comment "An American record producer, rapper, songwriter and DJ."@en .
+
+dbr:Miley_Cyrus a myOnto:Person ;
+    dbo:birthName "Destiny Hope Cyrus"@en ;
+    myOnto:hasWikipageID 8135890 ;
+    rdfs:label "Miley Cyrus"@en ;
+    rdfs:comment "An American singer, songwriter, and actress."@en .
+    
+dbr:Pharrell_Williams a myOnto:Person ;
+    dbo:birthName "Pharrell Lanscilo Williams"@en ;
+    myOnto:hasWikipageID 735009 ;
+    rdfs:label "Pharrell Williams"@en ;
+    rdfs:comment "An American record producer, rapper, singer, and songwriter."@en .
+    
+dbr:Selena_Gomez a myOnto:Person ;
+    dbo:birthName "Selena Marie Gomez"@en ;
+    myOnto:hasWikipageID 6844407 ;
+    rdfs:label "Selena Gomez"@en ;
+    rdfs:comment "An American singer, actress and film producer."@en .
+    
+dbr:Tainy a myOnto:Person ;
+    dbo:birthName "Marcos Efraín Masís Fernández"@en ;
+    myOnto:hasWikipageID 14147029 ;
+    rdfs:label "Tainy"@en ;
+    rdfs:comment "A Puerto Rican record producer and songwriter."@en .
+    
+dbr:Greg_Kurstin a myOnto:Person ;
+    dbo:birthName "Gregory Allen Kurstin"@en ;
+    myOnto:hasWikipageID 16096608 ;
+    rdfs:label "Greg Kurstin"@en ;
+    rdfs:comment "An American record producer, multi-instrumentalist, and songwriter."@en .
+
+dbr:Jake_Gosling a myOnto:Person ;
+    dbo:birthName "Jake Gosling"@en ;
+    myOnto:hasWikipageID 30794834 ;
+    rdfs:label "Jake Gosling"@en ;
+    rdfs:comment "A British music producer."@en .
+
+dbr:Max_Martin a myOnto:Person ;
+    dbo:birthName "Karl Martin Sandberg"@en ;
+    myOnto:hasWikipageID 640575 ;
+    rdfs:label "Max Martin"@en ;
+    rdfs:comment "A Swedish record producer and songwriter."@en .
+
+dbr:Paul_Epworth a myOnto:Person ;
+    dbo:birthName "Paul Richard Epworth"@en ;
+    myOnto:hasWikipageID 3577734 ;
+    rdfs:label "Paul Epworth"@en ;
+    rdfs:comment "An English record producer, songwriter, musician, and remixer."@en .
+
+dbr:Rihanna a myOnto:Person ;
+    dbo:birthName "Robyn Rihanna Fenty"@en ;
+    myOnto:hasWikipageID 2110323 ;
+    rdfs:label "Rihanna"@en ;
+    rdfs:comment "A Barbadian singer, actress, and businesswoman."@en .
+    
+dbr:Taylor_Swift a myOnto:Person ;
+    dbo:birthName "Taylor Alison Swift"@en ;
+    myOnto:hasWikipageID 5422144 ;
+    rdfs:label "Taylor Swift"@en ;
+    rdfs:comment "An American singer-songwriter."@en .
+
+dbr:Benny_Blanco a myOnto:Person ;
+    dbo:birthName "Benjamin Joseph Levin"@en ;
+    myOnto:hasWikipageID 20034513 ;
+    rdfs:label "Benny Blanco"@en ;
+    rdfs:comment "An American songwriter and record producer."@en .
+    
+dbr:Rick_Nowels a myOnto:Person ;
+    dbo:birthName "Richard Wright Nowels Jr."@en ;
+    myOnto:hasWikipageID 868529 ;
+    rdfs:label "Rick Nowels"@en ;
+    rdfs:comment "An American songwriter, record producer, multi-instrumentalist and arranger."@en .
+
+dbr:Lana_Del_Rey a myOnto:Person ;
+    dbo:birthName "Elizabeth Woolridge Grant"@en ;
+    myOnto:hasWikipageID 33209238 ;
+    rdfs:label "Lana Del Rey"@en ;
+    rdfs:comment "An American singer-songwriter."@en .
+
+dbr:Adele a myOnto:Person ;
+    dbo:birthName "Adele Laurie Blue Adkins"@en ;
+    myOnto:hasWikipageID 13041163 ;
+    rdfs:label "Adele"@en ;
+    rdfs:comment "An English singer and songwriter."@en .
+
+dbr:Ed_Sheeran a myOnto:Person ;
+    dbo:birthName "Edward Christopher Sheeran"@en ;
+    myOnto:hasWikipageID 30528002 ;
+    rdfs:label "Ed Sheeran"@en ;
+    rdfs:comment "An English singer and songwriter."@en .
+
+
+#################################################################
+# MUSIC GENRE 
+
+
+dbr:Progressive_rap a dbo:MusicGenre ;
+    foaf:name "Progressive rap"@en ;
+    rdfs:label "Progressive rap"@en ;
+    rdfs:comment "A genre of a broad subgenre of hip hop music."@en .
+
+dbr:Disco a dbo:MusicGenre ;
+    foaf:name "Disco"@en ;
+    rdfs:label "Disco"@en ;
+    rdfs:comment "A genre of dance music and a subculture that emerged in the 1970s."@en .
+
+dbr:Electro_house a dbo:MusicGenre ;
+    foaf:name "Electro house"@en ;
+    rdfs:label "Electro house"@en ;
+    rdfs:comment "A genre of electronic dance music characterized by heavy bass and a tempo around 130 beats per minute."@en .
+    
+dbr:Dance_music a dbo:MusicGenre ;
+    foaf:name "Dance music"@en ;
+    rdfs:label "Dance music"@en ;
+    rdfs:comment "Music composed specifically to facilitate or accompany dancing."@en .
+
+dbr:Electronic_music a dbo:MusicGenre ;
+    foaf:name "Electronic music"@en ;
+    rdfs:label "Electronic music"@en ;
+    rdfs:comment "A genre that employs electronic musical instruments or digital instruments in its creation."@en .
+
+dbr:Funk a dbo:MusicGenre ;
+    foaf:name "Funk"@en ;
+    rdfs:label "Funk"@en ;
+    rdfs:comment "A music genre originated in African American communities in the mid-1960s."@en .
+
+dbr:Hip_hop_music a dbo:MusicGenre ;
+    foaf:name "Hip hop music"@en ;
+    rdfs:label "Hip hop music"@en ;
+    rdfs:comment "A genre of popular music that originated in New York City in the 1970s."@en .
+
+dbr:Soft_rock a dbo:MusicGenre ;
+    foaf:name "Soft rock"@en ;
+    rdfs:label "Soft rock"@en ;
+    rdfs:comment "A form of rock music that originated in the late 1960s in Southern California and the United Kingdom."@en .
+
+dbr:Soul_music a dbo:MusicGenre ;
+    foaf:name "Soul music"@en ;
+    rdfs:label "Soul music"@en ;
+    rdfs:comment "A popular music genre that originated in the African American community throughout the United States in the late 1950s and early 1960s."@en .
+    
+dbr:Electropop a dbo:MusicGenre ;
+    foaf:name "Electropop"@en ;
+    rdfs:label "Electropop"@en ;
+    rdfs:comment "A hybrid music genre combining elements of electronic and pop genres."@en .
+
+dbr:Pop_music a dbo:MusicGenre ;
+    foaf:name "Pop music"@en ;
+    rdfs:label "Pop music"@en ;
+    rdfs:comment "A genre of popular music that originated in its modern form during the mid-1950s in the United States and the United Kingdom."@en .
+
+
+#################################################################
+# RECORD COMPANY
+
+
+dbr:GOOD_Music a myOnto:RecordCompany ;
+    myOnto:hasName "GOOD Music"@en ;
+    rdfs:label "GOOD Music"@en ;
+    rdfs:comment "An American record label founded by rapper Kanye West."@en .
+
+dbr:RCA_Records a myOnto:RecordCompany ;
+    myOnto:hasName "RCA Records"@en ;
+    rdfs:label "RCA Records"@en ;
+    rdfs:comment "An American record label currently owned by Sony Music Entertainment."@en .
+
+dbr:Warner_Music_Group a myOnto:RecordCompany ;
+    myOnto:hasName "Warner Music Group"@en ;
+    rdfs:label "Warner Music Group"@en ;
+    rdfs:comment "An American multinational entertainment and record label conglomerate headquartered in New York City."@en .
+
+dbr:Asylum_Records a myOnto:RecordCompany ;
+    myOnto:hasName "Asylum Records"@en ;
+    rdfs:label "Asylum Records"@en ;
+    rdfs:comment "An American record label, founded in 1971 by David Geffen and partner Elliot Roberts."@en .
+
+dbr:Big_Machine_Records a myOnto:RecordCompany ;
+    myOnto:hasName "Big Machine Records"@en ;
+    rdfs:label "Big Machine Records"@en ;
+    rdfs:comment "An American independent record label."@en .
+
+dbr:Def_Jam_Recordings a myOnto:RecordCompany ;
+    myOnto:hasName "Def Jam Recordings"@en ;
+    rdfs:label "Def Jam Recordings"@en ;
+    rdfs:comment "An American multinational record label owned by Universal Music Group."@en .
+    
+dbr:Republic_Records a myOnto:RecordCompany ;
+    myOnto:hasName "Republic Records"@en ;
+    rdfs:label "Republic Records"@en ;
+    rdfs:comment "A New York City–based American record label."@en .
+    
+dbr:Universal_Music_Group a myOnto:RecordCompany ;
+    myOnto:hasName "Universal Music Group"@en ;
+    rdfs:label "Universal Music Group"@en ;
+    rdfs:comment "A Dutch–American multinational music corporation."@en .
+
+dbr:XL_Recordings a myOnto:RecordCompany ;
+    myOnto:hasName "XL Recordings"@en ;
+    rdfs:label "XL Recordings"@en ;
+    rdfs:comment "A British independent record label founded in 1989 by Tim Palmer and Nick Halkes."@en .
+
+dbr:Atlantic_Records a myOnto:RecordCompany ;
+    myOnto:hasName "Atlantic Records"@en ;
+    rdfs:label "Atlantic Records"@en ;
+    rdfs:comment "An American record label founded in October 1947 by Ahmet Ertegun and Herb Abramson."@en .
+
+dbr:Columbia_Records a myOnto:RecordCompany ;
+    myOnto:hasName "Columbia Records"@en ;
+    rdfs:label "Columbia Records"@en ;
+    rdfs:comment "An American record label owned by Sony Music Entertainment."@en .
+
+dbr:Interscope_Records a myOnto:RecordCompany ;
+    myOnto:hasName "Interscope Records"@en ;
+    rdfs:label "Interscope Records"@en ;
+    rdfs:comment "An American record label owned by Universal Music Group."@en .

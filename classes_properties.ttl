@@ -1,0 +1,146 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix myOnto: <http://www.mysemantics.com/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://www.mysemantics.com/> .
+@base <http://www.mysemantics.com/> .
+
+
+myOnto: a owl:Ontology ;
+    rdfs:comment "An ontology for our 22 favorite songs"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.mysemantics.com/ontology/Person
+myOnto:Person a owl:Class ;
+              rdfs:subClassOf schema:Person ,
+            [ 
+              a owl:Restriction ;
+              owl:onProperty myOnto:hasWikipageID ;
+              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+              owl:onDataRange xsd:nonNegativeInteger ;       
+            ] ;
+            rdfs:label "Person"@en ;
+            rdfs:comment "A class defining a person."@en .   
+
+###  http://www.mysemantics.com/ontology/Song
+myOnto:Song a owl:Class ;
+            rdfs:subClassOf dbo:Song, schema:MusicRecording ,
+          [
+            a owl:Restriction ;
+            owl:onProperty dbo:releaseDate ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onDataRange xsd:date ;
+          ] ,
+          [
+            a owl:Restriction ;
+            owl:onProperty dbo:producer ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onDataRange xsd:anyURI ;
+          ] ,
+          [
+            a owl:Restriction ;
+            owl:onProperty dbo:writer ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onDataRange xsd:anyURI ;
+          ] ,
+          [
+            a owl:Restriction ;
+            owl:onProperty dbo:recordLabel ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onDataRange xsd:anyURI ;
+          ] ,
+          [
+            a owl:Restriction ;
+            owl:onProperty dbo:artist ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onDataRange xsd:anyURI ;
+          ] ,
+          [
+            a owl:Restriction ;
+            owl:onProperty dbo:genre ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onDataRange xsd:anyURI ;
+          ] ;
+          rdfs:label "Song"@en ;
+          rdfs:comment "A class defining a song."@en .
+
+###  http://www.mysemantics.com/ontology/RecordCompany
+myOnto:RecordCompany a owl:Class ;
+                     rdfs:subClassOf dbo:Company ;
+                     rdfs:label "Record Company"@en ;
+                     rdfs:comment "A class defining a record label."@en .
+
+
+#################################################################
+#    Datatype properties
+#################################################################
+
+###  http://www.mysemantics.com/ontology/hasName
+myOnto:hasName a owl:DatatypeProperty,
+                 owl:FunctionalProperty ;
+               rdfs:domain myOnto:RecordCompany,
+                                  myOnto:Song ;
+               rdfs:range xsd:string ;
+               rdfs:label "Name"@en ;
+               rdfs:comment "The name of a song or record label."@en .
+
+###  http://www.mysemantics.com/ontology/hasWikipageID
+myOnto:hasWikipageID a owl:DatatypeProperty,
+                       owl:FunctionalProperty,
+                       owl:InverseFunctionalProperty ;
+                     rdfs:domain myOnto:Person ;
+                     rdfs:range xsd:integer ;
+                     rdfs:label "Wikipage ID"@en ;
+                     rdfs:comment "A person has a Wikipage ID."@en .
+    
+    
+#################################################################
+#    Declaration of external classes
+#################################################################
+
+###  https://schema.org/Person
+schema:Person a owl:Class .
+
+###  https://schema.org/Organization
+schema:Organization a owl:Class .
+
+###  https://schema.org/MusicRecording
+schema:MusicRecording a owl:Class .
+
+###  https://dbpedia.org/ontology/Company
+dbo:Company a owl:Class .
+
+###  https://dbpedia.org/ontology/Song
+dbo:Song a owl:Class .
+
+
+#################################################################
+#    Declaration of external properties
+#################################################################
+
+###  http://dbpedia.org/ontology/birthName    
+dbo:birthName a owl:DatatypeProperty .
+
+###  http://dbpedia.org/ontology/artist
+dbo:artist a owl:ObjectProperty .
+
+###  http://dbpedia.org/ontology/genre
+dbo:genre a owl:ObjectProperty .
+
+###  http://dbpedia.org/ontology/producer
+dbo:producer a owl:ObjectProperty .
+
+###  http://dbpedia.org/ontology/recordLabel
+dbo:recordLabel a owl:ObjectProperty .
+
+###  http://dbpedia.org/ontology/releaseDate
+dbo:releaseDate a owl:DatatypeProperty .
+
+###  http://dbpedia.org/ontology/writer
+dbo:writer a owl:ObjectProperty .
